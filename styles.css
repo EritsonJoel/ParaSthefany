@@ -8,6 +8,9 @@ body {
   max-height: 200%;
   background: #666;
 }
+.fr {
+  margin-left: 5em;
+}
 .nav-bar {
   background: rgb(43, 42, 42);
   padding: 20px;
