@@ -1,0 +1,33 @@
+div {
+  display: none;
+}
+.body {
+  background: black;
+}
+.dedi {
+  background: white;
+}
+header {
+  display: none;
+}
+
+.btn1 {
+  background: steelblue;
+  width: 400px;
+  height: 50px;
+}
+.btn2 {
+  background: steelblue;
+  width: 100px;
+  width: 50px;
+}
+.btn4 {
+  background: skyblue;
+  width: 150px;
+  height: 80px;
+}
+.btn5 {
+  background: skyblue;
+  width: 150px;
+  height: 80px;
+}

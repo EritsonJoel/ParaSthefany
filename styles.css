@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  max-height: 200%;
+  background: #666;
+}
+.nav-bar {
+  background: rgb(43, 42, 42);
+  padding: 20px;
+  display: block;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5em;
+  width: 100%;
+  position: relative;
+}
+.imagen2 {
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  z-index: -10;
+}
+.corazon1 {
+  width: 10px;
+  height: 10px;
+}
+.corazon2 {
+  width: 20px;
+  height: 20px;
+}
+.menu,
+.submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu {
+  background: #555;
+  width: 100%;
+  margin-left: -100%;
+  transition: all 0.8s; /*para hacer transition*/
+}
+.menu_link {
+  display: block;
+  padding: 20px;
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+.submenu {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.submenu .menu_link {
+  background: #333;
+  padding-left: 40px;
+}
+
+.mostrar {
+  margin-left: 0;
+}
+.imagen1 {
+  position: relative;
+
+  width: 100%;
+  height: 400px;
+}
+
+/*estilos del formulario*/
+section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: skyblue;
+  background-size: cover;
+  background-position: center center;
+}
+.form_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0));
+
+  width: 380px;
+  padding: 50px, 30px;
+  border-radius: 10px;
+  box-shadow: 7px 7px 60px #000;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.control input {
+  width: 50%;
+  display: block;
+  padding: 10px;
+  color: #222;
+  border: none;
+  margin: 1em 0;
+}
+
+.control input[type="button"] {
+  background: crimson;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.mn {
+  width: 100%;
+  height: 800px;
+  position: relative;
+  background: #555;
+  bottom: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+.colect {
+  width: 80%;
+  height: 300px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+.I1 {
+}
+.colect1 {
+  width: 80%;
+  height: 120px;
+  border: 1px solid white;
+  position: relative;
+  top: 15em;
+}
+.sub {
+  position: absolute;
+  top: 2em;
+  font-size: 40px;
+}
+
+.textoP {
+  position: absolute;
+  bottom: 19em;
+  left: 3em;
+  z-index: 1;
+  color: rgb(198, 210, 218);
+}
+
+h1 {
+  position: absolute;
+  bottom: 8em;
+  font-size: 40px;
+  z-index: 1;
+  left: 4em;
+  color: rgb(198, 210, 218);
+}
+.footer {
+  position: relative;
+  top: 27em;
+}
+/*-------------------------------------------------------------------*/
+@media (min-width: 1024px) {
+  /* si la  pantalla min-width: 1024;   */
+  .nav-bar {
+    display: none; /*entonces  el menu (color naranaja): cada vez que la pantalla se mayor  a 1024px , se ocultará*/
+  }
+  .imagen2 {
+    display: none;
+  }
+
+  .menu {
+    margin-left: 0;
+    display: flex;
+  }
+  .menu_link:hover {
+    background: #444;
+  }
+  .submenu .menu_link {
+    background: #777;
+  }
+  .submenu {
+    position: absolute;
+    top: 60px;
+    width: 200px;
+    overflow: visible;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .container_submenu:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+  }
+  .imagen1 {
+    margin-bottom: 5em;
+    z-index: 1;
+    width: 100%;
+    height: 200px;
+  }
+}
+@media (max-width: 1024px) {
+  .imagen1 {
+    display: none;
+  }
+}
