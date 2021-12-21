@@ -35,6 +35,9 @@ body {
   width: 20px;
   height: 20px;
 }
+.usuario {
+  color: red;
+}
 .menu,
 .submenu {
   list-style: none;
@@ -47,7 +50,7 @@ body {
   margin-left: -100%;
   transition: all 0.8s; /*para hacer transition*/
   position: relative;
-  bottom: 30em;
+  bottom: 25em;
 }
 .menu_link {
   display: block;
@@ -55,6 +58,18 @@ body {
   color: white;
   font-size: 1.2em;
   text-decoration: none;
+}
+.i1 {
+  width: 500px;
+  height: 500px;
+}
+.i2 {
+  width: 500px;
+  height: 500px;
+}
+.i3 {
+  width: 500px;
+  height: 500px;
 }
 .submenu {
   height: 0;

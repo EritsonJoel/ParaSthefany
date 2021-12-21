@@ -1,19 +1,26 @@
 
-
+function co(){
+     const va = document.getElementById('usuario')
+     
+     va.style.display=='block'
+}
 
 function login(){
        
      
      
    const   dato = document.getElementById('usuario').value;
+   const pr = document.getElementById('usuario')
+   let mensaje = ''
 
-
-     if(dato == 'Joel' || dato  == 'zeta' || dato =='Sthefany' ){
+     if(dato == 'Joel' || dato  == 'zeta' || dato =='Sthefany' || dato == 'sthefany'){
 
           window.location = 'index.html';
       
      }else{
-          swal('usted no puede ingresar')
+        
+          pr.write('usuario no valido')
+    
      }
 }
 
