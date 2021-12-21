@@ -6,8 +6,12 @@
 body {
   margin: 0;
   max-height: 200%;
-  background: #666;
+  background: black;
 }
+.body2 {
+  background-image: url(./diana.png);
+}
+
 .fr {
   margin-left: 5em;
 }
@@ -49,8 +53,8 @@ body {
   width: 100%;
   margin-left: -100%;
   transition: all 0.8s; /*para hacer transition*/
-  position: relative;
-  bottom: 25em;
+
+  bottom: 20em;
 }
 .menu_link {
   display: block;
@@ -59,18 +63,7 @@ body {
   font-size: 1.2em;
   text-decoration: none;
 }
-.i1 {
-  width: 500px;
-  height: 500px;
-}
-.i2 {
-  width: 500px;
-  height: 500px;
-}
-.i3 {
-  width: 500px;
-  height: 500px;
-}
+
 .submenu {
   height: 0;
   overflow: hidden;
@@ -96,7 +89,7 @@ section {
   position: relative;
   height: 100vh;
   width: 100%;
-  background: skyblue;
+  background-image: url(./tefi2.jpg);
   background-size: cover;
   background-position: center center;
 }
@@ -134,7 +127,10 @@ h1 {
   text-transform: uppercase;
   font-size: 1.2em;
   opacity: 0.7;
-  transition: opacity 0.3s ease;
+  transition: opa city 0.3s ease;
+}
+footer {
+  background: #333;
 }
 
 .mn {
