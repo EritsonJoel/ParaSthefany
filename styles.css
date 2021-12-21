@@ -46,6 +46,8 @@ body {
   width: 100%;
   margin-left: -100%;
   transition: all 0.8s; /*para hacer transition*/
+  position: relative;
+  bottom: 42em;
 }
 .menu_link {
   display: block;
